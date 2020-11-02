@@ -13,9 +13,3 @@ docker run --rm \
            -e"XAUTHORITY"="$XAUTH" \
            -e"DISPLAY" \
            ubergarm/monodevelop
-
-# logs go to:
-# cat ~/.cache/MonoDevelop/7.0/Logs/Ide.log
-# su - garm
-
-
