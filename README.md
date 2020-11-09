@@ -39,5 +39,8 @@ Mount your files to edit locally into the container at `/home/user/workdir`
 cat /home/user/.cache/MonoDevelop/7.0/Logs/Ide.log
 ```
 
+## RimWorld modding
+* [setting up monodevelop rimworld mod project](https://blog.rubenwardy.com/2016/07/21/rimworld-setup-monodevelop/)
+
 ## References
 * [monodevelop install](https://www.monodevelop.com/download/)

@@ -2,11 +2,10 @@
 
 XSOCK=/tmp/.X11-unix
 XAUTH=/tmp/.docker.xauth
-xauth nlist :0 | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
-chmod 664 $XAUTH
+xauth nlist "$DISPLAY" | sed -e 's/^..../ffff/' | xauth -f "$XAUTH" nmerge -
 
 docker run --rm \
-           -it \
+           -d \
            -v "$XAUTH":"$XAUTH" \
            -v "$XSOCK":"$XSOCK" \
            -v "$PWD":/home/user/workdir \
